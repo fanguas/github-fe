@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>GitHub FE | The Palace Company</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar is-light fade-in" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <strong>📦 GitHub FE</strong>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-content">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar-content" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" id="btn-miembros">Miembros</a>
+        <a class="navbar-item" id="btn-repos">Repositorios</a>
+
+        <div class="navbar-item">
+          <form class="is-flex" style="gap: 0.5rem;">
+            <input class="input is-small is-rounded" type="text" id="repo" name="repo" placeholder="Buscar repositorio" required />
+            <button class="button is-small is-link" type="submit" id="btn-buscar">Buscar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="button is-light" href="https://github.com/fanguas" target="_blank">
+            GitHub ⚡
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-light fade-in">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">The Palace Company</h1>
+        <h2 class="subtitle">Miembros y repositorios con GitHub API 🚀</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in">
+    <div class="container">
+      <div id="resultados"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>GitHub API FE</strong>
+        <a href="https://github.com/fanguas" target="_blank">The Palace Company</a> ⚡
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="static/js/app.js"></script>
+</body>
+
+</html>
